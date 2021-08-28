@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Food_Picker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Foodpicker-2" translatesAutoresizingMaskIntoConstraints="NO" id="oyH-jH-aUm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52G-5Y-e8l">
+                                <rect key="frame" x="115" y="723" width="184" height="42"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Choos Food">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="choosFood:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Obm-7F-irE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lest's Go and Choos a Food you want to eat🔥" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPs-Md-3Fm">
+                                <rect key="frame" x="40" y="71" width="344" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="AbH-SS-tek"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="La9-r0-aUV">
+                                <rect key="frame" x="89" y="194" width="236" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="l7M-LB-GHf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oyH-jH-aUm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4iL-xt-u4p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VPs-Md-3Fm" secondAttribute="trailing" constant="30" id="6s4-3H-Qoh"/>
+                            <constraint firstItem="La9-r0-aUV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="89" id="KTr-x3-4Ix"/>
+                            <constraint firstItem="La9-r0-aUV" firstAttribute="top" secondItem="VPs-Md-3Fm" secondAttribute="bottom" constant="17" id="UJW-2f-W9P"/>
+                            <constraint firstItem="52G-5Y-e8l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="115" id="VYO-9z-iip"/>
+                            <constraint firstItem="La9-r0-aUV" firstAttribute="centerX" secondItem="52G-5Y-e8l" secondAttribute="centerX" id="Vfm-mk-bff"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="52G-5Y-e8l" secondAttribute="bottom" constant="97" id="cke-F3-rIh"/>
+                            <constraint firstItem="oyH-jH-aUm" firstAttribute="centerX" secondItem="La9-r0-aUV" secondAttribute="centerX" id="djP-Gb-cab"/>
+                            <constraint firstItem="oyH-jH-aUm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ob1-gw-grK"/>
+                            <constraint firstItem="VPs-Md-3Fm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="qvL-KR-MlB"/>
+                            <constraint firstItem="VPs-Md-3Fm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="voi-QV-0iu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnchoos" destination="52G-5Y-e8l" id="xF7-VQ-mcB"/>
+                        <outlet property="food" destination="La9-r0-aUV" id="fca-Ww-jsQ"/>
+                        <outlet property="labelchoos" destination="VPs-Md-3Fm" id="gkS-oV-4gD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Foodpicker-2" width="414" height="896"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
